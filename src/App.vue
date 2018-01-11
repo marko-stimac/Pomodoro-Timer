@@ -37,7 +37,7 @@ export default {
 	name: 'app',
 	data() {
 		return {
-			minutes: 1,
+			minutes: 25,
 			seconds: 0,
 			active: false,
 			paused: false
@@ -65,7 +65,7 @@ export default {
 
 			if (this.seconds < 0) 
 				this.seconds = 59
-
+			
 			if(this.seconds == 59)  {
 				console.log('asdfasdf')
 				this.minutes--
